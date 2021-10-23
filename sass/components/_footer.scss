@@ -17,10 +17,9 @@
 
 .footer__address-item {
   display: block;
-}
-
-.footer__address .footer__address-item:not(:last-child) {
-  margin-bottom: 9px;
+  .footer__address &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__nav-address {
@@ -81,21 +80,19 @@
   margin-right: 10px;
   background: rgba(255, 255, 255, 0.1);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__invite-item:hover,
-.footer__invite-item:focus {
-  background: var(--active-text);
+  &:hover,
+  &:focus {
+    background: var(--active-text);
+  }
 }
 
 .footer__invite-icon {
   fill: var(--white-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__invite-item:hover .footer__invite-icon,
-.footer__invite-item:focus .footer__invite-icon {
-  fill: var(--white-color);
+  .footer__invite-item:hover &,
+  .footer__invite-item:focus & {
+    fill: var(--white-color);
+  }
 }
 
 .footer__subscribe-title {
@@ -127,10 +124,9 @@
   left: 0;
   outline: none;
   color: var(--white-color);
-}
-
-.footer__subscribe-input:focus {
-  border-color: var(--secondary-background);
+  &:focus {
+    border-color: var(--secondary-background);
+  }
 }
 
 .footer__subscribe-btn {

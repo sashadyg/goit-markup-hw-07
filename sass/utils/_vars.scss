@@ -41,11 +41,10 @@ img {
 
 a {
   text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: var(--active-text);
+  &:focus,
+  &:hover {
+    color: var(--active-text);
+  }
 }
 
 li {

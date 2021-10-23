@@ -3,12 +3,11 @@
   padding-bottom: 94px;
 }
 
-.feature__list .feature__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .feature__list {
   display: flex;
+  & .feature__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .feature__icon {
